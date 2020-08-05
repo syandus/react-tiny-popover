@@ -23,6 +23,7 @@ export declare type Align = 'start' | 'center' | 'end';
 export declare interface PopoverProps {
   children: JSX.Element | ((ref: React.Ref<any>) => JSX.Element);
   isOpen: boolean;
+  stopPropagation: boolean;
   content: ContentRenderer | JSX.Element;
   contentDestination?: HTMLElement;
   contentLocation?: ContentLocationGetter | ContentLocation;
